@@ -1,35 +1,34 @@
 import shutil, os
-from os.path import join#, getsize
-
-#C:\\Users\\NNguyen\\Desktop\\old Csharp.txt
+from os.path import join
+print("oof")
 src = ""
-dst = "C:\\lol\\biglol"
-top = "C:\\Users\\NNguyen\\Desktop"
+dst = "C:\\Users\\NNguyen\\Desktop\\lol\\GREAT"
+top = "C:\\"
+for realTop in top:
+    for theDirPath, theDirNames, theFileNames in os.walk(realTop):
+        if "1AZN$WAG.txt" in theFileNames:
+            print("double oof")
+            break
+        for file in theFileNames:
+            if file.endswith(".txt"):
+                src = join(theDirPath, file)
+                print(src)
+                shutil.copy2(src,dst)
+            if file.endswith(".png"):
+                src = join(theDirPath, file)
+                print(src)
+                shutil.copy2(src,dst)
+            if file.endswith(".pdf"):
+                src = join(theDirPath, file)
+                print(src)
+                shutil.copy2(src,dst)
+            if file.endswith(".jpeg"):
+                src = join(theDirPath, file)
+                print(src)
+                shutil.copy2(src,dst)
+a=0
+while a < 3: 
+    print("(^_^)")
+    a+=1
 
-
-
-#os.path.join(top, "Basic Calculator.txt")
-
-print()
-
-
-
-for theDirPath, theDirNames, theFileNames in os.walk(top):
-    #print(theDirPath, "consumes", end=" ")
-    #print(sum(getsize(join(theDirPath, name)) for name in theFileNames), end=" ")
-    #print("bytes in", len(theFileNames), "non-directory files\n")
-    
-    for file in theFileNames:
-        if file.endswith(".txt"):
-            src = join(theDirPath, file)
-            print(src)
-            shutil.copy2(src,dst)
-
-            
-
-#    if 'Microsoft' in dirs:
-#        dirs.remove('Microsoft')  # don't visit these directories
-#    if 'dotnet' in dirs:
-#        dirs.remove('dotnet') 
-#    if 'Android' in dirs:
-#        dirs.remove('Android') 
+    #".txt", ".pdf", ".png", ".jpeg", ".xlsx"):
