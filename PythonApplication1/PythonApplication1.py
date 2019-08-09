@@ -51,10 +51,11 @@ print(not_haiku)
 
 a = True
 b = False
+'''
 wowowowowowowowowow
 c = true
 d = false
-
+'''
    
 
 age = 15
@@ -79,3 +80,40 @@ int_addition = int(number1) + int(number2)
 #int_addition has a value of 110
 
 print(int_addition)
+
+skill_completed = "Python Syntax"
+
+exercises_completed = 13
+#The amount of points for each exercise may change, because points don't exist yet
+points_per_exercise = 5
+
+point_total = 100
+
+what = exercises_completed*points_per_exercise
+
+point_total += what
+
+print('I got \n'+str(point_total)+' points!')
+
+
+fifth_letter = "MONTY"[4]
+
+print (fifth_letter)
+#print (\n)
+parrot = "Norwegian Blue"
+print (len(parrot))
+print (parrot.lower())
+print (parrot.upper())
+
+pi = 3.14
+print (str(pi))
+
+string_1 = 6.25
+string_2 = "place"
+
+print ("Let's not go to %f. 'Tis a silly %s." % (string_1, string_2))
+
+this = input ("So I can ask you a question ")
+#lol = input("and then you will answer it")
+
+print ("%s?, hmmmm" % (this)) 
