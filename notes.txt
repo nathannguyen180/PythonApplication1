@@ -1,0 +1,14 @@
+https://stackoverflow.com/questions/5125907/how-to-run-a-shell-script-in-os-x-by-double-clicking/29710607
+
+https://stackoverflow.com/questions/123198/how-do-i-copy-a-file-in-python
+
+https://stackoverflow.com/questions/3964681/find-all-files-in-a-directory-with-extension-txt-in-python
+
+https://stackoverflow.com/questions/3207219/how-do-i-list-all-files-of-a-directory
+
+https://stackoverflow.com/questions/7419665/python-move-and-overwrite-files-and-folders
+
+
+
+this is not it chief:
+https://stackoverflow.com/questions/541390/extracting-extension-from-filename-in-python
