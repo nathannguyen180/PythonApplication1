@@ -43,9 +43,3 @@ while a < 3:
     print("(^_^)")
     a+=1
 input("Finished")
-
-    #".txt", ".pdf", ".png", ".jpeg", ".xlsx"):
-#https://stackabuse.com/creating-and-deleting-directories-with-python/
-#https://www.pyinstaller.org/features.html
-#https://www.google.com/search?q=pyinstaller&ie=&oe=
-#https://stackoverflow.com/questions/273192/how-can-i-safely-create-a-nested-directory
