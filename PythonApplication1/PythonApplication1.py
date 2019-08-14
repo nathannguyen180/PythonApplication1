@@ -117,3 +117,20 @@ this = input ("So I can ask you a question ")
 #lol = input("and then you will answer it")
 
 print ("%s?, hmmmm" % (this)) 
+
+
+from datetime import datetime
+timeBoi = datetime.now()
+
+print ('%02d/%02d/%04d' % (timeBoi.month, timeBoi.day, timeBoi.year))
+
+print ('%02d:%02d:%02d' % (timeBoi.hour, timeBoi.minute, timeBoi.second))
+
+
+
+#while True:
+#try:
+#x = int(input("Please enter a number: "))
+       # break
+    #except ValueError:
+     #   print("Oops!  That was no valid number.  Try again...")

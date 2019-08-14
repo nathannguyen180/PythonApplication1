@@ -21,7 +21,6 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="winez.py" />
     <Compile Include="module1.py">
       <SubType>Code</SubType>
     </Compile>
