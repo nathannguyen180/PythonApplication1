@@ -14,3 +14,6 @@ https://datatofish.com/executable-pyinstaller/
 
 this is not it chief:
 https://stackoverflow.com/questions/541390/extracting-extension-from-filename-in-python
+
+
+
