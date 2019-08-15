@@ -16,4 +16,19 @@ this is not it chief:
 https://stackoverflow.com/questions/541390/extracting-extension-from-filename-in-python
 
 
+------------------------------------------------------------8/15/19--------------------------------------------------------------------
+-need to detect drive letters so the "dst" is right
 
+-works only on my laptop since the drive letter of the flash drive is right
+  -quick walk crashes while full can finish
+   -also turn off autorun on my pc through registry
+
+-F: Drive on upstairs desktop
+  -no permissions everywhere
+  -could finish both quick & full
+
+-D: Drive on Evan's laptop
+  -immediately crash (probably because of Mcfree scanner?)
+
+-check if macs have the same directory paths as windows
+  -read documentation on os.walk on python (to solve most of these problems?)
