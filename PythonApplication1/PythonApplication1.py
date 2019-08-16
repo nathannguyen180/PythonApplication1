@@ -126,11 +126,72 @@ print ('%02d/%02d/%04d' % (timeBoi.month, timeBoi.day, timeBoi.year))
 
 print ('%02d:%02d:%02d' % (timeBoi.hour, timeBoi.minute, timeBoi.second))
 
-
-
 #while True:
 #try:
 #x = int(input("Please enter a number: "))
        # break
     #except ValueError:
      #   print("Oops!  That was no valid number.  Try again...")
+
+answer = "'Tis but a scratch!"
+
+def black_knight():
+    if answer == "'Tis but a scratch!":
+        return True
+    else:             
+        return False       # Make sure this returns False
+
+def french_soldier():
+    if answer == "Go away, or I shall taunt you a second time!":
+        return True
+    else:             
+        return  False      # Make sure this returns False
+      
+def greater_less_equal_5(answer):
+    if answer > 5:
+        return 1
+    elif answer < 5:          
+        return -1
+    else:
+        return 0
+        
+print (greater_less_equal_5(4))
+print (greater_less_equal_5(5))
+print (greater_less_equal_5(6))
+
+# Complete the if and elif statements!
+def grade_converter(grade):
+    if grade >= 90:
+        return "A"
+    elif grade >= 80 :
+        return "B"
+    elif grade >= 70:
+        return "C"
+    elif grade >= 65:
+        return "D"
+    else:
+        return "F"
+      
+# This should print an "A"      
+print (grade_converter(92))
+
+# This should print a "C"
+print (grade_converter(70))
+
+# This should print an "F"
+print (grade_converter(61))
+
+
+#pig latin? this is so cringe
+pyg = 'ay'
+
+original = input('Enter a word:')
+
+if len(original) > 0 and original.isalpha():
+  word = original.lower()
+  first = word[0]
+  new_word = word + first + pyg
+  new_word = new_word[1:len(new_word)]
+  print (new_word)
+else:
+  print ('empty')
