@@ -12,12 +12,13 @@ https://ourcodeworld.com/articles/read/273/how-to-create-an-executable-exe-from-
 
 https://datatofish.com/executable-pyinstaller/
 
+https://stackoverflow.com/questions/827371/is-there-a-way-to-list-all-the-available-drive-letters-in-python
+
 this is not it chief:
 https://stackoverflow.com/questions/541390/extracting-extension-from-filename-in-python
 
 
 ------------------------------------------------------------8/15/19--------------------------------------------------------------------
--need to detect drive letters so the "dst" is right
 
 -works only on my laptop since the drive letter of the flash drive is right
   -quick walk crashes while full can finish
@@ -30,5 +31,6 @@ https://stackoverflow.com/questions/541390/extracting-extension-from-filename-in
 -D: Drive on Evan's laptop
   -immediately crash (probably because of Mcfree scanner?)
 
+-----------------------------------------------------------8/16/19--------------------------------------------------------------------
 -check if macs have the same directory paths as windows
-  -read documentation on os.walk on python (to solve most of these problems?)
+ 
