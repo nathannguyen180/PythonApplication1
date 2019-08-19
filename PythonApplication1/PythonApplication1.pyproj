@@ -24,6 +24,7 @@
     <Compile Include="mac.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="PythonApplication1 - Copy.py" />
     <Compile Include="win.py">
       <SubType>Code</SubType>
     </Compile>

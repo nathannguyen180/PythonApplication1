@@ -1,38 +1,39 @@
 import shutil, os
 from os.path import join
 print("oof")
+theseTypes = [".png", ".jpeg", ".gif", ".mp4", ".mov", ".txt", ".pdf", ".docx", ".doc", ".pages", ".rtf", ".key", ".xls", ".xlsx", ".xlr"]
 src = ""
-# this is another dead_end "C:\\Users\\NNguyen\\Desktop\\lol"
-dead_ends = ["C:\\Dell", "C:\\Intel", "C:\\Log Files", "C:\\Microsoft", "C:\\oracle", "C:\\PerfLogs", "C:\\Windows", "C:\\Program Files (x86)", "C:\\Program Files"]
-dst = "\\LMAOBOX\\pc_1"
-print(dst)
-top = []           
-     
+#dead_ends = ["C:\\Dell", "C:\\Intel"]
+dst = "\\Volumes\\LMAOBOX\\pc_1"
+top = []                                                            #TODO: figure out the top
 
-def detecting_file(type):
-    if file.endswith(type):
+def detecting_file(thisType):
+    if file.endswith(thisType):
         src = join(theDirPath, file)
         print(src)
         try:
-            shutil.copy2(src,dst)
+            shutil.copy2(src,dst)                                   #TODO: dst should be the correct folder based on its file type 
         except PermissionError:
             print("\n\n\n\n\n\n\n\n\n\n\n\nno permission^\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
 
+def not_needed(game):
+    if game in theDirNames:
+        theDirNames.remove(game)
+        
+for oneFolder in theseTypes:
+    os.makedirs("C:\\Users\\NNguyen\\Desktop\\Newly Created Folder\\{}".format(oneFolder))
 
-for oneTop in top:
-    for theDirPath, theDirNames, theFileNames in os.walk(oneTop):
-        if theDirPath in dead_ends:
-            theDirNames[:] = []
-            continue
-        else:
-            for file in theFileNames:
-                detecting_file(".txt")
-                detecting_file(".png")
-                detecting_file(".pdf")
-                detecting_file(".jpeg")
-                detecting_file(".docx")
-                detecting_file(".xlsx")
-                detecting_file(".xls")
+for theDirPath, theDirNames, theFileNames in os.walk(top):
+    not_needed("Steam")
+    not_needed("roblox")
+    not_needed("minecraft")    
+    for file in theFileNames:
+        for oneType in theseTypes:
+            detecting_file(oneType)
+            #I could make an if command right here to break this for loop when it actually copies so we dont have to go down and finish the list even though it already copied it (save time?)
+            # triple for loop has not been tested 8/19/19
+
+
 b = 0
 while b < 3: 
     print("(^_^)")

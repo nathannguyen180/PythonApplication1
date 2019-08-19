@@ -1,5 +1,6 @@
 
 import string
+import os
 from ctypes import windll
 
 #def get_drives():
@@ -38,13 +39,19 @@ from ctypes import windll
 #print(def_drives())
 
 #OKAY, just make a while that increments up so that it runs only 2 times and then it will automatically stop you from inputing my drive letters into the array (if the computer does not have the drive, I think it will just skip and break?)
-top = []           
-a=0        
-while a<2:
-    buff = input("Drives? ")
-    buff += ":\\"
-    top.append(buff.upper())
-    print (top)
-    buff = ""
-    a += 1
-    
+#top = []           
+#a=0        
+#while a<2:
+#    buff = input("Drives? ")
+#    buff += ":\\"
+    #top.append(buff.upper())
+   # print (top)
+  #  buff = ""
+ #   a += 1
+#    
+
+#os.makedirs("C:\\Users\\NNguyen\\Desktop\\Newly Created Folder")
+theseTypes = [".png", ".jpeg", ".gif", ".mp4", ".mov", ".txt", ".pdf", ".docx", ".doc", ".pages", ".rtf", ".key", ".xls", ".xlsx", ".xlr"]
+
+for oneFolder in theseTypes:
+    os.makedirs("C:\\Users\\NNguyen\\Desktop\\Newly Created Folder\\{}".format(oneFolder))
