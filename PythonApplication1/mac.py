@@ -14,20 +14,21 @@ for oneFolder in theseTypes:
 def detecting_file(thisType):
     if file.endswith(thisType):
         src = join(theDirPath, file)
-        print(src)
+        #print(src)
         try:
             shutil.copy2(src, "{}\\{}".format(dst, thisType))                                  
         except PermissionError:
             print("\n\n\n\n\n\n\n\n\n\n\n\nno permission^\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
+        except shutil.SameFileError:
+            print("\n\n\n\n\n\n\n\n s a m e   f i l e ^\n\n\n\n\n\n\n\n\n\n\n")
+
 
 def not_needed(game):
     if game in theDirNames:
         theDirNames.remove(game)
        
 for theDirPath, theDirNames, theFileNames in os.walk(top):
-    not_needed("Steam")
-    not_needed("roblox")
-    not_needed("minecraft")
+
     for file in theFileNames:
         for oneType in theseTypes:
             detecting_file(oneType)

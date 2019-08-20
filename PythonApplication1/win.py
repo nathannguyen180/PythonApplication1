@@ -1,6 +1,5 @@
-import shutil, os
+import shutil, os, string
 from os.path import join
-import string
 from ctypes import windll
 print("oof")
 theseTypes = [".png", ".jpeg", ".gif", ".mp4", ".mov", ".txt", ".pdf", ".docx", ".doc", ".pages", ".rtf", ".key", ".xls", ".xlsx", ".xlr"]
