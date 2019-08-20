@@ -1,0 +1,20 @@
+6.44 minutes --- 115gb (Task Manager)
+
+3.54 minutes --- 115gb (#print(src) )
+4.11 minutes--- 115gb (#print(src) & internet)
+4.23 minutes--- 115gb (#print(src) & internet)
+4 minutes--- 115gb (#print(src) & internet)
+3.52 minutes--- 115gb (#print(src) & internet)
+5.24 minutes--- 115gb (#print(src) & codecademy internet)
+4.39 minutes--- 115gb (#print(src) & codecademy internet)
+4.39 minutes--- 115gb (#print(src) & codecademy internet)
+4.40 minutes--- 115gb (#print(src) & codecademy internet)
+
+
+
+5.54 minutes --- 115gb (internet)
+5.30 minutes--- 115gb (internet)
+5.38 minutes--- 115gb (internet)
+7.08 minutes--- 115gb (heavy internet)
+6.50 minutes--- 115gb (codecademy internet)
+7.06 minutes--- 115gb (codecademy internet)
