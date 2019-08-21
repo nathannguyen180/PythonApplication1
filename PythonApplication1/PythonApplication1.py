@@ -1,3 +1,9 @@
+#https://code.visualstudio.com/docs/python/python-tutorial
+#https://ourcodeworld.com/articles/read/505/how-to-disable-autocompletion-and-intellisense-in-microsoft-visual-studio-code
+
+#https://marketplace.visualstudio.com/publishers/Microsoft
+#https://marketplace.visualstudio.com/items?itemName=RobbOwen.synthwave-vscode
+#https://marketplace.visualstudio.com/items?itemName=Nuuf.theme-hackershaze
 
 
 some_message = "wtf, wheres string or int?"
@@ -196,3 +202,72 @@ if len(original) > 0 and original.isalpha():
 else:
   print ('empty')
  
+
+def shut_down(what):
+    if (what == "y"):
+        return "what"
+    elif (what == "n"):
+        return "wtf"
+    else:
+        return "im done"
+
+print(shut_down(pyg))
+
+
+#List Slicing (first index is included but second index is excluded)
+
+suitcase = ["sunglasses", "hat", "passport", "laptop", "suit", "shoes"]
+
+# The first and second items (index zero and one)
+first = suitcase[0:2]
+
+# Third and fourth items (index two and three)
+middle = suitcase[2:4]
+
+# The last two items (index four and five)
+last = suitcase[4:6] 
+
+
+
+
+
+
+
+animals = ["aardvark", "badger", "duck", "emu", "fennec fox"]
+duck_index = animals.index("duck")# Use index() to find "duck"
+
+# Your code here!
+animals.insert(duck_index, "cobra")
+
+print (animals) # Observe what prints after the insert operation
+
+
+
+
+
+
+
+start_list = [5, 3, 1, 2, 4]
+square_list = []
+
+# Your code here!
+for sqtime in start_list:
+  
+  square_list.append(sqtime**2)
+
+
+square_list.sort()
+print (square_list)
+
+
+
+
+#list inside of a dictionary
+some_dict = {}
+some_dict['list_1'] = ['what', 'is', 'this']
+some_dict['list_2'] = [5,4,3,2,1]
+
+print (some_dict['list_1'])
+
+
+

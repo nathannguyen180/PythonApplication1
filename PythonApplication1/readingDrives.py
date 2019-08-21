@@ -1,6 +1,5 @@
-
-import string
-import os
+import shutil, os, string
+from os.path import join
 from ctypes import windll
 
 #def get_drives():
@@ -51,7 +50,11 @@ from ctypes import windll
 #    
 
 #os.makedirs("C:\\Users\\NNguyen\\Desktop\\Newly Created Folder")
-theseTypes = [".png", ".jpeg", ".gif", ".mp4", ".mov", ".txt", ".pdf", ".docx", ".doc", ".pages", ".rtf", ".key", ".xls", ".xlsx", ".xlr"]
 
-for oneFolder in theseTypes:
-    os.makedirs("C:\\Users\\NNguyen\\Desktop\\Newly Created Folder\\{}".format(oneFolder))
+#theseTypes = [".png", ".jpeg", ".gif", ".mp4", ".mov", ".txt", ".pdf", ".docx", ".doc", ".pages", ".rtf", ".key", ".xls", ".xlsx", ".xlr"]
+
+#for oneFolder in theseTypes:
+ #   os.makedirs("C:\\Users\\NNguyen\\Desktop\\Newly Created Folder\\{}".format(oneFolder))
+
+
+  
